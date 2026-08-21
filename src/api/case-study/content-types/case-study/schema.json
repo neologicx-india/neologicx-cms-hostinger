@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "Case Study"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 100,
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "clientName": {
+      "type": "string",
+      "required": false
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "categoryIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "keyFeatures": {
+      "type": "json",
+      "required": true
+    },
+    "tags": {
+      "type": "json",
+      "required": true
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "challenge": {
+      "type": "blocks",
+      "required": true
+    },
+    "solution": {
+      "type": "blocks",
+      "required": true
+    },
+    "results": {
+      "type": "blocks"
+    },
+    "technologies": {
+      "type": "blocks",
+      "required": false
+    },
+    "projectDuration": {
+      "type": "string"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "publishedDate": {
+      "type": "date"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}
