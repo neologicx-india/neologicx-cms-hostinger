@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_case_study_faq_items",
+  "info": {
+    "displayName": "faq-item",
+    "icon": "message"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

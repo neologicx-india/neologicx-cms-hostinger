@@ -1,0 +1,66 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "displayName": "SEO"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160,
+      "required": true
+    },
+    "canonicalUrl": {
+      "type": "string"
+    },
+    "robots": {
+      "type": "enumeration",
+      "required": true,
+      "default": "index, follow",
+      "enum": [
+        "index, follow",
+        "noindex, follow",
+        "index, nofollow",
+        "noindex, nofollow"
+      ]
+    },
+    "ogTitle": {
+      "type": "string"
+    },
+    "ogDescription": {
+      "type": "text"
+    },
+    "ogImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "twitterTitle": {
+      "type": "string"
+    },
+    "twitterDescription": {
+      "type": "text"
+    },
+    "twitterImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "structuredData": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

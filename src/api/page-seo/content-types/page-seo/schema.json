@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_seos",
+  "info": {
+    "singularName": "page-seo",
+    "pluralName": "page-seos",
+    "displayName": "Page Seo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "pageSlug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}
